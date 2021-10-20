@@ -13,7 +13,7 @@ GPIO.setup(pwmPin, GPIO.OUT)
 # set min & max % duty cycles (5 and 10 are default values, but play
 # around to find optimum values for your motor)
 dcMin = 2
-dcMax = 23
+dcMax = 13
 
 pwm = GPIO.PWM(pwmPin, 50) # PWM object at 50 Hz (20 ms period)
 pwm.start(0)
@@ -23,7 +23,7 @@ try:
   for dc in range(dcMin,dcMax):
     pwm.ChangeDutyCycle(dc)
     print(dc)
-    time.sleep(0.1)
+    time.sleep(0.2)
   for dc in range(dcMin,dcMax):
     pwm.ChangeDutyCycle(dc)
     print(dc)
