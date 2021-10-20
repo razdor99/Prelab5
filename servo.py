@@ -21,11 +21,11 @@ pwm.start(0)
 try:
   pwm.ChangeDutyCycle(3)
   time.sleep(1)
-  pwm.ChangeDutyCycle(10)
+  pwm.ChangeDutyCycle(13)
   time.sleep(1)
   pwm.ChangeDutyCycle(3)
   time.sleep(1)
-  pwm.ChangeDutyCycle(10)
+  pwm.ChangeDutyCycle(13)
   time.sleep(1)
 except KeyboardInterrupt:
   print("closing")
